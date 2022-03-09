@@ -13,16 +13,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
+    lazy var gradient: CAGradientLayer = {
+        let gradient = CAGradientLayer()
+        gradient.type = .axial
+        gradient.colors = [
+            UIColor.systemBlue.cgColor,
+            UIColor.cyan.cgColor
+        ]
+        gradient.locations = [0, 0.8]
+        return gradient
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         usernameTextField.backgroundColor = .white
         passwordTextField.backgroundColor = .white
-       
+        
         loginButton.backgroundColor = .gray
         loginButton.layer.cornerRadius = 10
         
+        gradient.frame = view.bounds
+        view.layer.insertSublayer(gradient, at: 0)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

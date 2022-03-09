@@ -15,13 +15,12 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        usernameTextLabel.text = "Hoora your name is \(usernameText!)"
- 
+        
+        usernameTextLabel.text = "Your name is *\(usernameText!)*"
+        logoutButton.layer.cornerRadius = 10
     }
+    
     @IBAction func logoutButtonAction() {
         dismiss(animated: true)
     }
-    
-
 }

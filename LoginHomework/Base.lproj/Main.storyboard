@@ -110,6 +110,7 @@
                                 </state>
                                 <connections>
                                     <action selector="logoutButtonAction" destination="psj-Af-pQW" eventType="touchUpInside" id="6kh-0A-974"/>
+                                    <segue destination="CWN-ce-aqi" kind="unwind" unwindAction="unwindFor:" id="gkY-QW-sMD"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8PP-Gv-0SO">
@@ -141,6 +142,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoC-o5-aQI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="CWN-ce-aqi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="755" y="65"/>
         </scene>

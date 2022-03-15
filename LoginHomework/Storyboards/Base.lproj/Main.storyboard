@@ -105,9 +105,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Ths-Ir-IcO">
                                 <rect key="frame" x="16" y="243" width="343" height="181"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJs-IE-l4s">
-                                        <rect key="frame" x="117" y="0.0" width="109" height="39"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJs-IE-l4s">
+                                        <rect key="frame" x="20" y="0.0" width="303" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -133,6 +133,10 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="LJs-IE-l4s" firstAttribute="leading" secondItem="Ths-Ir-IcO" secondAttribute="leading" constant="20" id="0Fq-hU-cCj"/>
+                                    <constraint firstAttribute="trailing" secondItem="LJs-IE-l4s" secondAttribute="trailing" constant="20" id="oJT-8v-V0W"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kYg-gf-gHo"/>

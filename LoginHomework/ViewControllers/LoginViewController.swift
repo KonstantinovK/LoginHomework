@@ -49,8 +49,10 @@ class ViewController: UIViewController {
         
         usernameTextField.backgroundColor = .white
         usernameTextField.returnKeyType = .next
+        usernameTextField.delegate = self
         passwordTextField.backgroundColor = .white
         passwordTextField.returnKeyType = .done
+        passwordTextField.delegate = self
         loginButton.backgroundColor = .gray
         loginButton.layer.cornerRadius = 10
         

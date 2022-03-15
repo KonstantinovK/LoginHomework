@@ -121,7 +121,7 @@
                                         <rect key="frame" x="111.5" y="142" width="120" height="39"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="0Fb-aU-Qcg"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="0Fb-aU-Qcg"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Logout">
